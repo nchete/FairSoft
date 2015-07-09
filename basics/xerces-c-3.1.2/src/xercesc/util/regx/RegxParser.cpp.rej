@@ -1,0 +1,43 @@
+--- src/xercesc/util/regx/RegxParser.cpp_orig	2014-03-09 21:54:06.000000000 +0100
++++ src/xercesc/util/regx/RegxParser.cpp	2014-03-09 21:55:57.000000000 +0100
+@@ -691,11 +691,11 @@
+                     || (ch == chDash && getCharData() == chCloseSquare && firstLoop))) {
+                 // if regex = [-] then invalid...
+                 // '[', ']', '-' not allowed and should be escaped
+-                XMLCh chStr[] = { ch, chNull };
++                XMLCh chStr[] = { static_cast<XMLCh>(ch) , chNull };
+                 ThrowXMLwithMemMgr2(ParseException,XMLExcepts::Parser_CC6, chStr, chStr, getMemoryManager());
+             }
+             if (ch == chDash && getCharData() == chDash && getState() != REGX_T_BACKSOLIDUS && !wasDecoded) {
+-                XMLCh chStr[] = { ch, chNull };
++                XMLCh chStr[] = { static_cast<XMLCh>(ch) , chNull };
+                 ThrowXMLwithMemMgr2(ParseException,XMLExcepts::Parser_CC6, chStr, chStr, getMemoryManager());
+             }
+ 
+@@ -720,7 +720,7 @@
+                 else {
+ 
+                     XMLInt32 rangeEnd = getCharData();
+-                    XMLCh rangeEndStr[] = { rangeEnd, chNull };
++                    XMLCh rangeEndStr[] = { static_cast<XMLCh>(rangeEnd) , chNull };
+ 
+                     if (type == REGX_T_CHAR) {
+ 
+@@ -737,7 +737,7 @@
+                     processNext();
+ 
+                     if (ch > rangeEnd) {
+-                        XMLCh chStr[] = { ch, chNull };
++                        XMLCh chStr[] = { static_cast<XMLCh>(ch), chNull };
+                         ThrowXMLwithMemMgr2(ParseException,XMLExcepts::Parser_Ope3, rangeEndStr, chStr, getMemoryManager());
+                     }
+ 
+@@ -845,7 +845,7 @@
+         break;
+     default:
+     {
+-        XMLCh chString[] = {chBackSlash, ch, chNull};        
++        XMLCh chString[] = {chBackSlash, static_cast<XMLCh>(ch), chNull};        
+         ThrowXMLwithMemMgr1(ParseException,XMLExcepts::Parser_Process2, chString, getMemoryManager());
+     }
+     }

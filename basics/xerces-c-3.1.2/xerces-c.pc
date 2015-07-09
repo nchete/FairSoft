@@ -1,0 +1,11 @@
+prefix=/home/nathalie/ShipSoft/FairSoftInst
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: Xerces-C++
+Description: Validating XML parser library for C++
+Version: 3.1.2
+Libs: -L${libdir} -lxerces-c
+Libs.private: -lcurl
+Cflags: -I${includedir}

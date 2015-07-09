@@ -1,0 +1,11 @@
+--- src/xercesc/util/regx/ParserForXMLSchema.cpp_orig	2014-03-09 21:53:21.000000000 +0100
++++ src/xercesc/util/regx/ParserForXMLSchema.cpp	2014-03-09 21:53:46.000000000 +0100
+@@ -156,7 +156,7 @@
+         break;
+     default:
+         {
+-        XMLCh chString[] = {chBackSlash, ch, chNull};        
++        XMLCh chString[] = {chBackSlash, static_cast<XMLCh>(ch) , chNull};        
+         ThrowXMLwithMemMgr1(ParseException,XMLExcepts::Parser_Process2, chString, getMemoryManager());
+         }
+     }

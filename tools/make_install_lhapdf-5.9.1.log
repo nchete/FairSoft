@@ -1,0 +1,125 @@
+Making install in src
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/src'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/src'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/src'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/src'
+Making install in include
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/include'
+Making install in LHAPDF
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/include/LHAPDF'
+make[3]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/include/LHAPDF'
+make[3]: Nothing to be done for 'install-exec-am'.
+test -z "/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF" || /bin/mkdir -p "/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF"
+ /usr/bin/install -c -m 644 '/home/nathalie/ShipSoft/FairSoft/tools/lhapdf-5.9.1/include/LHAPDF/LHAPDF.h' '/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF/LHAPDF.h'
+ /usr/bin/install -c -m 644 '/home/nathalie/ShipSoft/FairSoft/tools/lhapdf-5.9.1/include/LHAPDF/LHAPDFfw.h' '/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF/LHAPDFfw.h'
+test -z "/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF" || /bin/mkdir -p "/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF"
+ /usr/bin/install -c -m 644 'FortranWrappers.h' '/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF/FortranWrappers.h'
+ /usr/bin/install -c -m 644 'LHAPDFConfig.h' '/home/nathalie/ShipSoft/FairSoftInst/include/LHAPDF/LHAPDFConfig.h'
+make[3]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/include/LHAPDF'
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/include/LHAPDF'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/include'
+make[3]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/include'
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/include'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/include'
+Making install in ccwrap
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/ccwrap'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/ccwrap'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/ccwrap'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/ccwrap'
+Making install in lib
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/lib'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/lib'
+test -z "/home/nathalie/ShipSoft/FairSoftInst/lib64" || /bin/mkdir -p "/home/nathalie/ShipSoft/FairSoftInst/lib64"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c  'libLHAPDF.la' '/home/nathalie/ShipSoft/FairSoftInst/lib64/libLHAPDF.la'
+libtool: install: /usr/bin/install -c .libs/libLHAPDF.so.0.0.0 /home/nathalie/ShipSoft/FairSoftInst/lib64/libLHAPDF.so.0.0.0
+libtool: install: (cd /home/nathalie/ShipSoft/FairSoftInst/lib64 && { ln -s -f libLHAPDF.so.0.0.0 libLHAPDF.so.0 || { rm -f libLHAPDF.so.0 && ln -s libLHAPDF.so.0.0.0 libLHAPDF.so.0; }; })
+libtool: install: (cd /home/nathalie/ShipSoft/FairSoftInst/lib64 && { ln -s -f libLHAPDF.so.0.0.0 libLHAPDF.so || { rm -f libLHAPDF.so && ln -s libLHAPDF.so.0.0.0 libLHAPDF.so; }; })
+libtool: install: /usr/bin/install -c .libs/libLHAPDF.lai /home/nathalie/ShipSoft/FairSoftInst/lib64/libLHAPDF.la
+libtool: install: /usr/bin/install -c .libs/libLHAPDF.a /home/nathalie/ShipSoft/FairSoftInst/lib64/libLHAPDF.a
+libtool: install: chmod 644 /home/nathalie/ShipSoft/FairSoftInst/lib64/libLHAPDF.a
+libtool: install: ranlib /home/nathalie/ShipSoft/FairSoftInst/lib64/libLHAPDF.a
+libtool: finish: PATH="/home/nathalie/ShipSoft/FairSoftInst/bin:/home/nathalie/geant4_workdir/bin/Linux-g++:/home/nathalie/ShipSoft/FairSoftInst/bin:/bin:/home/nathalie/ShipSoft/FairSoftInst/bin:/home/nathalie/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/sbin" ldconfig -n /home/nathalie/ShipSoft/FairSoftInst/lib64
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/nathalie/ShipSoft/FairSoftInst/lib64
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/lib'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/lib'
+Making install in examples
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/examples'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/examples'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/examples'
+Making install in pyext
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/pyext'
+/usr/bin/python setup.py build
+running build
+running build_py
+file lhapdf.py (for module lhapdf) not found
+file lhapdf.py (for module lhapdf) not found
+running build_ext
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/pyext'
+/usr/bin/python setup.py install --prefix=/home/nathalie/ShipSoft/FairSoftInst
+running install
+running build
+running build_py
+file lhapdf.py (for module lhapdf) not found
+file lhapdf.py (for module lhapdf) not found
+running build_ext
+running install_lib
+creating /home/nathalie/ShipSoft/FairSoftInst/lib64/python2.7
+creating /home/nathalie/ShipSoft/FairSoftInst/lib64/python2.7/site-packages
+copying build/lib.linux-x86_64-2.7/_lhapdf.so -> /home/nathalie/ShipSoft/FairSoftInst/lib64/python2.7/site-packages
+running install_egg_info
+Writing /home/nathalie/ShipSoft/FairSoftInst/lib64/python2.7/site-packages/lhapdf-5.9.1-py2.7.egg-info
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/pyext'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/pyext'
+Making install in bin
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/bin'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/bin'
+test -z "/home/nathalie/ShipSoft/FairSoftInst/bin" || /bin/mkdir -p "/home/nathalie/ShipSoft/FairSoftInst/bin"
+ /usr/bin/install -c 'lhapdf-config' '/home/nathalie/ShipSoft/FairSoftInst/bin/lhapdf-config'
+ /usr/bin/install -c '/home/nathalie/ShipSoft/FairSoft/tools/lhapdf-5.9.1/bin/lhapdf-getdata' '/home/nathalie/ShipSoft/FairSoftInst/bin/lhapdf-getdata'
+ /usr/bin/install -c '/home/nathalie/ShipSoft/FairSoft/tools/lhapdf-5.9.1/bin/lhapdf-query' '/home/nathalie/ShipSoft/FairSoftInst/bin/lhapdf-query'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/bin'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/bin'
+Making install in tests
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/tests'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/tests'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools/tests'
+make[1]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools'
+make[2]: Entering directory '/home/nathalie/ShipSoft/FairSoft/tools'
+make[2]: Nothing to be done for 'install-exec-am'.
+test -z "/home/nathalie/ShipSoft/FairSoftInst/share/lhapdf" || /bin/mkdir -p "/home/nathalie/ShipSoft/FairSoftInst/share/lhapdf"
+ /usr/bin/install -c -m 644 '/home/nathalie/ShipSoft/FairSoft/tools/lhapdf-5.9.1/PDFsets.index' '/home/nathalie/ShipSoft/FairSoftInst/share/lhapdf/PDFsets.index'
+make[2]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools'
+make[1]: Leaving directory '/home/nathalie/ShipSoft/FairSoft/tools'
