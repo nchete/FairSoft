@@ -1,5 +1,5 @@
 FROM hepsw/slc-base:6.5
-MAINTAINER Andrey Ustyuzhanin andrey.ustyuzhanin@cern.ch
+MAINTAINER Nathalie Chetelat n.chetelat.soto@access.uzh.ch
 ENTRYPOINT ["/bin/sh", "-c", "-l"]
 CMD ["bash"]
 
@@ -15,6 +15,10 @@ RUN yum -y install \
 	libX11-devel libXpm-devel libXmu-devel libXft-devel libXext-devel \
 	mesa-libGL-devel mesa-libGLU-devel \
 	expat-devel \
+	ncurses-devel \
+	curl bzip2-dev gzip tar \
+	flex bison imake redhat-lsb-core \
+	make patch sed\
 	python-devel \
 	libxml2-devel \
 	python-mtTkinter
@@ -24,7 +28,7 @@ RUN cp /usr/lib/gcc/x86_64-redhat-linux/3.4.6/lib* /usr/local/lib
 
 # VNC server
 RUN yum -y install x11vnc libpng xterm twm
-ENV SHIPSOFT /opt/ocean
+ENV SHIPSOFT /opt/ocean/
 ENV FAIRROOTPATH $SHIPSOFT/FairRootInst
 ENV SIMPATH $SHIPSOFT/FairSoftInst
 ENV FAIRSHIP /opt/ship/FairShip
@@ -33,6 +37,7 @@ ENV PYTHONPATH $FAIRSHIP/python:$SIMPATH/lib:$SIMPATH/lib/Geant4
 
 #export FAIRSHIP=$SHIPSOFT/FairShip
 #export FAIRSHIPRUN=$SHIPSOFT/FairShipRun
+
 
 RUN mkdir /tmp/FairShip
 COPY . /tmp/FairShip
